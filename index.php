@@ -9,7 +9,7 @@ include 'partials/database.php';
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
     <title>SPOTIFY</title>
   </head>
   <body>
@@ -23,6 +23,7 @@ include 'partials/database.php';
         </div>
       </header>
 
+      <!-- MAIN -->
       <main>
         <div class="container">
           <ul class="flex t-center">
@@ -35,7 +36,7 @@ include 'partials/database.php';
                 <div class="title">
                   <h4><?php echo $value['title'] ?></h4>
                 </div>
-                <div class="author  ">
+                <div class="author">
                   <h4><?php echo $value['author'] ?></h4>
                 </div>
                 <div class="year">

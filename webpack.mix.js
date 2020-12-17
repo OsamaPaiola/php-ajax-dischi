@@ -12,7 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/js/main.js', 'dist/js/main.js')
-    .sass('src/scss/main.scss', 'dist/css/main.css')
+    .sass('src/scss/main.scss', 'dist/css/style.css')
     .options({
     processCssUrls: false,
 });

@@ -1,0 +1,44 @@
+header {
+  background-color: $black;
+}
+
+header img {
+height: 50px;
+}
+
+header h1 {
+color: white;
+margin-left: 30px;
+}
+
+
+main {
+background-color: #191c19;
+color: white;
+}
+
+main .container {
+width: 1000px;
+}
+
+li {
+background-color: black;
+margin: 20px;
+padding: 10px;
+border-radius: 5px;
+}
+
+.poster {
+height: 200px;
+}
+
+.poster img {
+height: 100%;
+}
+
+.title,
+.author,
+.year,
+.genre {
+margin-top: 10px;
+}
