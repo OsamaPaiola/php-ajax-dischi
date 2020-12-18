@@ -1,5 +1,6 @@
+<!-- PHP INCLUDE -->
 <?php
-include 'partials/database.php';
+// include 'partials/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,28 @@ include 'partials/database.php';
       <main>
         <div class="container">
           <ul class="flex t-center">
-            <?php
+
+            <!-- VUEJS PRINT -->
+            <li v-for = "album in albums"  >
+              <div class="poster">
+                <img :src="album.poster" :alt="album.title">
+              </div>
+              <div class="title">
+                <h4>{{album.title}}</h4>
+              </div>
+              <div class="author">
+                <h4>{{album.author}}</h4>
+              </div>
+              <div class="year">
+                <h4>{{album.year}}</h4>
+              </div>
+              <div class="genre">
+                <h4>{{album.genre}}</h4>
+              </div>
+            </li>
+
+            <!-- PHP PRINT -->
+            <!-- <?php
             foreach ($database as $value) {?>
               <li class="t-center">
                 <div class="poster">
@@ -46,12 +68,14 @@ include 'partials/database.php';
                   <h4><?php echo $value['genre'] ?></h4>
                 </div>
               </li>
-            <?php } ?>
+            <?php } ?> -->
+            
           </ul>
         </div>
       </main>
-
-
     </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./dist/js/main.js" charset="utf-8"></script>
   </body>
 </html>

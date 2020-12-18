@@ -33,26 +33,11 @@ a {
 }
 
 header {
-  background-color: #191414;
+  background-color: #000;
 }
-
 header img {
   height: 50px;
 }
-
-header h1 {
-  color: white;
-  margin-left: 30px;
-}
-
-header {
-  background-color: #191414;
-}
-
-header img {
-  height: 50px;
-}
-
 header h1 {
   color: white;
   margin-left: 30px;
@@ -62,22 +47,22 @@ main {
   background-color: #191c19;
   color: white;
 }
-
 main .container {
   width: 1000px;
 }
 
-li {
-  background-color: black;
+main li {
+  background-color: #000;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  width: 220px;
 }
 
 .poster {
   height: 200px;
 }
-
 .poster img {
   height: 100%;
 }
